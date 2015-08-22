@@ -1,0 +1,84 @@
+<!-- Besides normalize.css this website is entirely written by hand and does not rely on any outside recourses or frameworks. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="styles.css">
+
+  <title>Mavuno Berlin</title>
+</head>
+<body class="flex column">
+
+  <header class="margin-10 padding-10">
+    <img src="images/logo.png" class="logo">
+  </header>
+
+  <main class="flex row self-center">
+    <section class="flex-100">
+      <div class="content padding-30 margin-10">
+        <p>
+          <strong>Aus ganz normalen Menschen werden leidenschaftliche Nachfolger Jesu, die furchtlos die Welt verändern.</strong><br><br>
+          Betrachte die Probleme des Alltags nicht als notwendiges Übel, das hoffentlich bald vorüber ist. Der Sonntag muss nicht der einzige Tag in der Woche sein, an dem deine Energie wieder aufgeladen wird.<br>
+          Viel weiter kommst du, wenn du lernst, fröhlich pfeifend durch den Alltag zu schreiten.<br>
+          Mit einer großzügigen Spende gehst du den ersten Schritt, etwas zu schaffen, das dir selbst und vielen weiteren Menschen zum Segen wird.
+        </p>
+        <ul>
+          <li>Das erste von vielen CD-Projekten kann beginnen</li>
+          <li>Noch mehr Menschen gefällt es noch besser in der Gemeinde</li>
+          <li>Mit den Liedern gehst du mit Gott noch intensiver durch den Alltag</li>
+        </ul>
+      </div>
+    </section>
+    <section class="flex-100">
+      <div class="margin-10 video-container content">
+        <iframe class="video" src="https://www.youtube.com/embed/E7UmH5UtPu0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="flex-66">
+      <div class="content padding-30 margin-10">
+        <p>
+          <h4>Bankverbindung</h4>
+          <span class="bank">
+ EFG Berlin-Lichterfelde <br>
+            Spar- und Kreditbank Bad Homburg<br>
+ Konto: 107905 <br>
+            BLZ: 500 921 00 <br>
+            IBAN: DE03 5009 2100 0000 1079 05<br>
+ BIC: GENODE51BH2<br>
+            Stichwort: Technik<br>
+          </span>
+        </p>
+        <h3>Spendenziel: 2.000,- Euro bis zum 20. September.</h3>
+        <p>
+          Sollte die „katastrophale“ Situation eintreten, dass mehr als 2.000 Euro gespendet werden, mach dir keine Sorgen. Von diesem Geld werden wir weiteres Zubehör kaufen, wie eine Stagebox und In-Ear-Systeme, um genug Ausrüstung für mehr als 4 Musiker auf der Bühne zu haben.
+        </p>
+      </div>
+    </section>
+    <section class="flex-33">
+      <div class="content padding-30 margin-10">
+        <div id="barometer-box">
+          <div id="barometer">
+          </div><!-- barometer -->
+        </div><!-- barometerbox -->
+        <h3 class="barometer-text text-center"><span id="spenden">100</span> / 2000 &#128</h3>
+        <p>Nur noch <span id="daysLeft"></span> Tage, um das Ziel zu erreichen!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center margin-10">
+    <a href="impressum.html">Impressum</a>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */img,legend{border:0}legend,td,th{padding:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,optgroup,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre,textarea{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}table{border-collapse:collapse;border-spacing:0}
+
+/* ============================================== */
+
+/* ===== General Styling ===== */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: url("images/bg.jpg");
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000;
+  height: 100%;
+}
+a, a:link{
+  text-decoration: none;
+  color: #7BA7BC;
+  transition: color 0.5s, box-shadow 0.5s, background-color 0.5s;
+}
+a:hover {
+  color: #244C5A;
+}
+
+/* ===== Flexbox Layout ===== */
+.flex {
+  display: flex;
+}
+.flex>* {
+  flex-grow: 1;
+}
+.nogrow {
+  flex-grow: 0;
+}
+.column {
+  flex-flow: column wrap;
+}
+.column-reverse {
+  flex-flow: column-reverse wrap;
+}
+.row {
+  flex-flow: row wrap;
+}
+.row-reverse {
+  flex-flow: row-reverse wrap;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+.content-spacebetween {
+  justify-content: space-between;
+}
+.content-center {
+  justify-content: center;
+}
+.child-center {
+  align-items: center;
+}
+.self-center  {
+  align-self: center;
+}
+.flex-25, .flex-33, .flex-50, .flex-66, .flex-100 {
+  overflow: scroll;
+}
+.flex-25 {
+  width: 25%;
+}
+.flex-33 {
+  width: calc(100% /3);
+}
+.flex-50 {
+  width: 50%;
+}
+.flex-75 {
+  width: 75%;
+}
+.flex-66 {
+  width: calc(100% /3 *2);
+}
+.flex-100 {
+  width: 100%;
+}
+.order1 {
+  order: 1;
+}
+.order2 {
+  order: 2;
+}
+.order3 {
+  order: 3;
+}
+.order4 {
+  order: 4;
+}
+.order5 {
+  order: 5;
+}
+.order6 {
+  order: 6;
+}
+/* ===== Helper Classes ===== */
+/* layout */
+.padding-10 {
+  padding: 10px;
+}
+.padding-30 {
+  padding: 30px;
+}
+.margin-10 {
+  margin: 10px;
+}
+.nomargin {
+  margin: 0;
+}
+.nopadding {
+  padding: 0;
+}
+.hide {
+  display: none !important;
+}
+
+/* font */
+.text-secondary {
+  color: rgba(0,0,0,0.3);
+}
+.text-center {
+  text-align: center;
+}
+
+/* ===== Styling ===== */
+body>* {
+  display: block;
+}
+/* header */
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+/* main */
+main {
+  max-width: 900px;
+}
+.content {
+  background-color: #fff;
+  box-shadow: 0 2px 5px #000;
+}
+.video-container {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+.video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  /* width="960" height="720" */
+}
+.bank {
+  font-variant: small-caps;
+}
+.barometer-text {
+  color: #244C5A;
+}
+#barometer-box {
+  height: 50px;
+  background-color: #bbdde6;
+  opacity: 0.85;
+  transition: opacity 0.4s;
+}
+#barometer-box:hover {
+  opacity: 1;
+}
+#barometer {
+  height: 100%;
+  background-color: #244C5A;
+}
+
+/* ===== Media Queries ===== */
+@media screen and (max-width: 991px) {
+  /* flex layout */
+  .flex-25 {
+    width: calc(100% /3);
+  }
+  /* helper classes */
+  .hidden-md {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* flex layout */
+  .flex-25, .flex-33, .flex-50, .flex-66 {
+    width: 100%;
+  }
+  .flex-sm-50 {
+    width: 50%;
+  }
+  .flex-sm-1 {
+    width: 100%;
+  }
+  .order-xs-1 {
+    order: 1;
+  }
+  .order-xs-2 {
+    order: 2;
+  }
+  /* helper classes */
+  .hidden-xs {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  /* styling */
+
+}
+
+@media (min-aspect-ratio: 3456/2304) {
+  body {
+    background-size: 100% auto;
+  }
+}
+@media (max-aspect-ratio: 3456/2304) {
+  body {
+    background-size: auto 100%;
+  }
+}
+
+/* ===== Debugging ===== */
+.debug1 {
+  background-color: pink;
+  border: 1px solid red;
+}
+.debug2 {
+  background-color: lightblue;
+  border: 1px solid blue;
+}
+.debug3 {
+  background-color: lightgreen;
+  border: 1px solid green;
+}
